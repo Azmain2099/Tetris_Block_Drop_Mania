@@ -1,0 +1,62 @@
+name: notun
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.0.5  # For state management
+  flutter_riverpod: ^2.5.1  # Alternative state management
+  vector_math: ^2.1.4  # For game physics
+  just_audio: ^0.9.46  # Downgraded for compatibility
+  audioplayers: ^5.1.0  # For background music
+  shared_preferences: ^2.2.2  # For saving high scores
+  confetti: ^0.7.0  # For celebration effects
+  flutter_animate: ^4.5.2  # For premium animations
+  google_fonts: ^6.2.0  # For custom typography
+  shimmer: ^3.0.0  # For glowing effects
+  flutter_svg: ^2.0.7  # For premium SVG graphics
+  cached_network_image: ^3.3.0  # For Pokémon images
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.6  # For code generation
+  flutter_launcher_icons: ^0.13.1  # For custom app icons
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"  # Replace with your actual icon path
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sounds/background.mp3
+    - assets/sounds/move.mp3
+    - assets/sounds/rotate.mp3
+    - assets/sounds/drop.mp3
+    - assets/sounds/place.wav
+    - assets/sounds/clear.mp3
+    - assets/sounds/game_over.mp3
+    - assets/sounds/collect_point.mp3
+
+  fonts:
+    - family: Pokemon
+      fonts:
+        - asset: assets/fonts/pokemonsolid.ttf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
